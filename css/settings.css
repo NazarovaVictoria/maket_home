@@ -1,0 +1,16 @@
+body {
+    font-family: "RobotoSlab-Regular", serif;
+    font-size: 14px;
+    background-color: #fff;
+    overflow-x: hidden;
+    color: #555;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}

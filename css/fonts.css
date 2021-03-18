@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: 
+      url("../fonts/Montserrat/woff2/Montserrat-Regular.woff2") format("woff2"),
+      url("../fonts/Montserrat/woff/Montserrat-Regular.woff") format("woff"),
+      url("../fonts/Montserrat/ttf/Montserrat-Regular.ttf") format("truetype");
+      font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src:
+      url("../fonts/Montserrat/woff2/Montserrat-Bold.woff2") format("woff2"),
+      url("../fonts/Montserrat/woff/Montserrat-Bold.woff") format("woff"),
+      url("../fonts/Montserrat/ttf/Montserrat-Bold.ttf") format("truetype");
+      font-display: swap;
+}
+
+@font-face {
+    font-family: "RobotoSlab-Regular";
+    src:
+      url("../fonts/RobotoSlab/woff2/RobotoSlab-Regular.woff2") format("woff2"),
+      url("../fonts/RobotoSlab/woff/RobotoSlab-Regular.woff") format("woff"),
+      url("../fonts/RobotoSlab/ttf/RobotoSlab-Regular.ttf") format("truetype");
+     font-display: swap;
+}
+
+@font-face {
+    font-family: "RobotoSlab-Bold";
+    src:
+      url("../fonts/RobotoSlab/woff2/RobotoSlab-Bold.woff2") format("woff2"),
+      url("../fonts/RobotoSlab/woff/RobotoSlab-Bold.woff") format("woff"),
+      url("../fonts/RobotoSlab/ttf/RobotoSlab-Bold.ttf") format("truetype");
+     font-display: swap;
+}
