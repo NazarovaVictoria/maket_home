@@ -1,7 +1,18 @@
 @import "./reset.css";
 @import "./fonts.css";
 @import "./settings.css";
-
+// color
+$cw:#fff;
+$clight:#f8f8f8;
+$cblue:#0056b3;
+$cred:#c0301c;
+$cgrey:#555;
+$clightgray:#777;
+$cllgray:#ddd;
+$cbglight:#d7d7d7;
+// fonts
+$Mont-Reg: "Montserrat-Regular", sans-serif;
+$RobSl-Reg: "RobotoSlab-Regular", sans-serif;
 .intro {
 	background-image: url("../images/header/Home.jpg");
 	background-size: cover;
@@ -37,11 +48,11 @@ header {
 	font-family: "Montserrat-Bold", sans-serif;
 	font-weight: 600;
 	font-size: 24px;
-	color: #fff;
+	color: $cw;
 	letter-spacing: 1.2px;
 	text-transform: capitalize;
 	&:hover {
-		color: #0056b3;
+		color: $cblue;
 	}
 }
 
@@ -64,11 +75,11 @@ header {
 .nav {
 	a {
 	letter-spacing: 1px;
-	color: #fff;
-	font-family: "Montserrat-Regular", sans-serif;
+	color: $cw;
+	font-family: $Mont-Reg;
 	text-transform: capitalize;
 		&:hover {
-			color: #0056b3;
+			color: $cblue;
 		}
 	}
 	
@@ -79,13 +90,13 @@ header {
 		flex-direction: column;
 		align-items: center;
 		padding-top: 2px;
-		color: #fff;
+		color: $cw;
 
 	}
 }
 .wr-intro {
 	p {
-	font-family: "Montserrat-Regular", sans-serif;
+	font-family: $Mont-Reg;
 	font-size: 48px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -106,15 +117,15 @@ header {
 }
 .wr-intro {
 	a {
-	font-family: "Montserrat-Regular", sans-serif;
+	font-family: $Mont-Reg;
 	font-size: 16px;
 	text-transform: uppercase;
-	color: #fff;
-	border: 2px solid #fff;
+	color: $cw;
+	border: 2px solid $cw;
 	border-radius: 2px;
 	padding: 15px 32px;
 		&:hover{
-			background-color: #0056b3;
+			background-color: $cblue;
 		}
 	}
 }
@@ -127,9 +138,9 @@ header {
 }
 .section-title {
 	h3 {
-	font-family: "Montserrat-Regular", sans-serif;
+	font-family: $Mont-Reg;
 	font-size: 20px;
-	color: #555;
+	color: $cgrey;
 	text-transform: uppercase;
 	margin-bottom: 26px;
 	line-height: 1.2;
@@ -140,12 +151,12 @@ header {
 	& .title-decor {
 		width: 50px;
 		height: 2px;
-		background-color: #555;
+		background-color: $cgrey;
 	}
 }
 .section-title {
 	p {
-	font-family: "RobotoSlab-Regular", sans-serif;
+	font-family: $RobSl-Reg;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 1.1px;
@@ -171,23 +182,21 @@ header {
 		width: 85px;
 		height: 85px;
 		margin-bottom: 30px;
-
-		// padding: 20px;
 	}
 }
 .services-card-svg {
 	border-radius: 50%;
-	border: 2px solid #ddd;
+	border: 2px solid $cllgray;
 	&:hover {
-		background-color: #c0301c;
+		background-color: $cred;
 	}
 	& .svg {
 		width: 44px;
 		height: 40px;
-		color: #c0301c;
+		color: $cred;
 		padding: 17px;
 		&:hover {
-			color: #fff;
+			color: $cw;
 		}
 	}
 }
@@ -206,17 +215,16 @@ header {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		font-family: "Montserrat-Regular";
+		font-family: $Mont-Reg;
 		font-weight: 1000;
 		font-size: 12px;
-		color: #555;
+		color: $cgrey;
 		text-transform: uppercase;
 		margin-bottom: .75rem;
 		padding-top: 30px;
 	}
 	p {
-		font-family: "RobotoSlab-Regular",
-		sans-serif;
+		font-family: $RobSl-Reg;
 		text-align: center;
 		font-size: 14px;
 		line-height: 1.4;
@@ -230,7 +238,7 @@ header {
 .slider {
 	margin-left: auto;
 	margin-right: auto;
-	background: #f8f8f8;
+	background: $clight;
 	position: relative;
 }
 .slider-row {
@@ -239,7 +247,7 @@ header {
 	
 }
 .slider-row-text {
-	font-family: "RobotoSlab-Regular", sans-serif;
+	font-family: $RobSl-Reg;
 	font-size: 12px;
 	line-height: 1.5;
 	font-weight: 200;
@@ -261,9 +269,9 @@ header {
 		height: 35px;
 		border: 0;
 		overflow: none;
-		background-color: #d7d7d7;
+		background-color: $cbglight;
 		&:hover {
-			background-color: #c0301c;
+			background-color: $cred;
 		}
 		
 	}
@@ -287,8 +295,8 @@ header {
 	}
 	&::after {
 		content: "";
-		border-left: 3px solid #d7d7d7;
-		border-bottom: 3px solid #d7d7d7;
+		border-left: 3px solid $cbglight;
+		border-bottom: 3px solid $cbglight;
 		left: 15px;
 	}
 }
@@ -300,8 +308,8 @@ header {
 	}
 	&::after {
 		content: "";
-		border-right: 3px solid #d7d7d7;
-		border-top: 3px solid #d7d7d7;
+		border-right: 3px solid $cbglight;
+		border-top: 3px solid $cbglight;
 		right: 14px;
 	}
 }
@@ -314,20 +322,17 @@ header {
 }
 .slider-item {
 	text-align: center;
-	// & .slick-active:first-child :last-child {
-	// 	margin: 0;
-	// }
 	h3 {
-		font-family: "Montserrat-Regular",sans-serif;
+		font-family: $Mont-Reg;
 		font-size: 14px;
-		color: #555;
+		color: $cgrey;
 		text-transform: uppercase;
 		margin-top: 20px;
 	}
 	p {
-		font-family: "RobotoSlab-Regular",sans-serif;
+		font-family: $RobSl-Reg;
 		font-size: 12px;
-		color: #555;
+		color: $cgrey;
 		margin-top: 16px;
 	}
 }
@@ -337,7 +342,7 @@ header {
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 100%;
+		width: 110%;
 		height: 100%;
 		background-color: rgba(0, 0, 0, .5);
 		opacity: 0;
@@ -357,13 +362,13 @@ header {
 	& svg {
 		width: 17px;
 		height: 17px;
-		color: #fff;
+		color: $cw;
 		margin: 0 7.5px;
 	}
 	& a {
 		&:hover {
-			border: 4px solid #c0301c;
-			background-color: #c0301c;
+			border: 4px solid $cred;
+			background-color: $cred;
 		}
 	}
 }
@@ -379,13 +384,13 @@ header {
 		list-style-type: none;
 	}
 	& a {
-		font-family: "RobotoSlab-Regular", sans-serif;
+		font-family: $RobSl-Reg;
 		font-size: 14px;
 		letter-spacing: 1px;
-		color: #555;
+		color: $cgrey;
 		text-transform: capitalize;
 			&:hover {
-				color: #c0301c;
+				color: $cred;
 			}
 	}
 }
@@ -413,9 +418,7 @@ header {
 	overflow: hidden;
 		&:hover .works-block {
 			opacity: 1;
-			
 		}
-		
 }
 .works-block {
 	position: absolute;
@@ -427,16 +430,16 @@ header {
 	opacity: 0;
 	transition: all .6s;
 	h5 {
-		font-family: "Montserrat-Regular", sans-serif;
+		font-family: $Mont-Reg;
 		font-size: 14px;
-		color: #fff;
+		color: $cw;
 		letter-spacing: 1px;
 		margin-bottom: 18px;
 	}
 	p {
-		font-family: "RobotoSlab-Regular", sans-serif;
+		font-family: $RobSl-Reg;
 		font-size: 11px;
-		color: #fff;
+		color: $cw;
 		letter-spacing: 1px;
 		margin-bottom: 30px;
 	}
@@ -451,11 +454,11 @@ header {
 .works-btn {
 	display: flex;
 	a {
-		font-family: "RobotoSlab-Regular", sans-serif;
+		font-family: $RobSl-Reg;
 		font-size: 12px;
 		font-weight: 300;
-		color: #c0301c;
-		background-color: #fff;
+		color: $cred;
+		background-color: $cw;
 		padding: 15px 30px 15px 20px;
 		outline: none;
 		position: relative;
@@ -468,14 +471,14 @@ header {
 			position: absolute;
 			top: 18px;
 			transform: rotate(45deg);
-			border-right: 1px solid #c0301c;
-			border-top: 1px solid #c0301c;
+			border-right: 1px solid $cred;
+			border-top: 1px solid $cred;
 			right: 14px;
 		}
 
 	}
 	svg {
-		color: #c0301c;
+		color: $cred;
 		width: 7px;
 		height: 11px;
 		margin-left: 12px;
@@ -498,9 +501,9 @@ header {
 	padding-top: 100px;
 	margin: 0 auto;
 		h3 {
-			font-family: "RobotoSlab-Regular", sans-serif;
+			font-family: $RobSl-Reg;
 			font-size: 24px;
-			color: #fff;
+			color: $cw;
 			font-weight: 300;
 			&:nth-child(1) {
 				margin-bottom: 20px;
@@ -510,17 +513,17 @@ header {
 			}
 		}
 		a {
-			font-family: "RobotoSlab-Regular",sans-serif;
+			font-family: $RobSl-Reg;
 			font-size: 14px;
 			font-weight: 300;
 			line-height: 1;
-			color: #fff;
+			color: $cw;
 			padding: 16px 25px;
-			border: 2px solid #fff;
+			border: 2px solid $cw;
 			border-radius: 2px;
 			text-transform: uppercase;
 			&:hover {
-				background-color: #0056b3;
+				background-color: $cblue;
 			}
 		}
 }
@@ -530,7 +533,7 @@ header {
 .posts-container {
 	display: flex;
 	position: relative;
-	// margin: 38px 0;
+	
 	img {
 		max-width: 460px;
 		height: auto;
@@ -544,7 +547,7 @@ header {
 	margin-top: 38px;
 }
 .post-decor {
-	border-bottom: 2px solid #ddd;
+	border-bottom: 2px solid $cllgray;
 	width: 100%;
 }
 .posts-block {
@@ -555,13 +558,13 @@ header {
 	display: flex;
 }
 .calendar {
-	border: 2px solid #555;
+	border: 2px solid $cgrey;
 	padding: 18px 20px;
 	display: inline-block;
 	text-align: center;
 	& .calendar-days {
 		font-family: "Montserrat-Bold", sans-serif;
-		color: #777;
+		color: $clightgray;
 		&:first-child {
 			font-size: 18px;
 			margin-bottom: 10px;
@@ -575,51 +578,35 @@ header {
 }
 .posts-block-title {
 	margin-left: 26px;
-	
-// 	&::before {
-// 		content: "18 oct";
-// 		border: 2px solid #555;
-// 		padding: 17px 20px;
-// 		position: absolute;
-// 		font-family: "Montserrat-Bold",
-// 		sans-serif;
-// 		color: #777;
-// 		text-transform: uppercase;
-		
-// 	}
 	h5 {
-		font-family: "Montserrat-Regular",
-		sans-serif;
+		font-family: $Mont-Reg;
 		font-style: 12px;
-		color: #555;
+		color: $cgrey;
 		text-transform: uppercase;
 		margin-bottom: 20px;
 		padding-top: 15px;
 		&:hover {
-			color: #c0301c;
+			color: $cred;
 		}
 	}
 	p {
-		font-family: "RobotoSlab-Regular",sans-serif;
+		font-family: $RobSl-Reg;
 		font-size: 11px;
-		color: #777;
+		color: $clightgray;
 		font-style: italic;
-		// margin-bottom: 40px;
-		
 	}
 	span {
 		&:hover {
-			color: #c0301c;
+			color: $cred;
 		}
 		
 	}
 }
-
 .posts-block-title-title {
 	p {
-		font-family: "RobotoSlab-Regular",sans-serif;
+		font-family: $RobSl-Reg;
 		font-size: 12px;
-		color: #555;
+		color: $cgrey;
 		line-height: 1.6;
 		margin-bottom: 37px;
 		margin-top: 23px;
@@ -627,14 +614,13 @@ header {
 	h3 {
 		font-family: "RobotoSlab-Bold", sans-serif;
 		font-size: 11px;
-		color: #777;
+		color: $clightgray;
 		text-transform: uppercase;
 		&:hover {
-			color: #c0301c;
+			color: $cred;
 		}
 }
 }
-
 .slider-image-wrapper {
 	max-width: 1140px;
 	margin: 0 auto;
@@ -650,7 +636,7 @@ header {
 .slider-text {
 	padding-top: 100px;
 	padding-bottom: 100px;
-	background-color: #f8f8f8;
+	background-color: $clight;
 	background-size: cover;
 }
 .slider-text-link {
@@ -664,31 +650,22 @@ header {
 		
 	}
 }
-// .slider-span {
-// 	position: absolute;
-// 	top: 0;
-// 	left: 0;
-// 	width: 100%;
-// 	height: 100%;
-// 	background-color: rgba(201, 100, 86, 0.6);
-// 	opacity: 0;
-// 	transition: all .6s;
-// }
+
 .slider-text-item {
 	text-align: center;
 	
 	p {
-		font-family: "RobotoSlab-Regular",sans-serif;
+		font-family: $RobSl-Reg;
 		font-size: 15px;
-		color: #555;
+		color: $cgrey;
 		font-weight: 400;
 		font-style: italic;
 		margin-bottom: 42px;
 	}
 	h3 {
-		font-family: "RobotoSlab-Regular",sans-serif;
+		font-family: $RobSl-Reg;
 		font-size: 17px;
-		color: #555;
+		color: $cgrey;
 		font-weight: 400;
 		margin-bottom: 40px;
 	}
@@ -700,7 +677,7 @@ header {
 		align-items: center;
 		justify-content: center;
 		& .slick-active button {
-			background-color: #c0301c;
+			background-color: $cred;
 		}
 		& li {
 			list-style: none;
@@ -708,7 +685,7 @@ header {
 			& button {
 				width: 13px;
 				height: 13px;
-				background-color: #ddd;
+				background-color: $cllgray;
 				border-radius: 50%;
 				&::before {
 					display: none;
@@ -733,7 +710,7 @@ header {
 		height: 20px;
 		
 		&:hover {
-			color: #0056b3;
+			color: $cblue;
 			transition: all .6s;
 		}
 	}
@@ -744,12 +721,12 @@ header {
 	a {
 		// font-family: "Montserrat-Regular",sans-serif;
 		font-size: 11px;
-		color: #555;
+		color: $cgrey;
 		text-transform: uppercase;
 		font-weight: 400;
 		&:hover {
-			color: #0056b3;
-			border-bottom: 2px solid #0056b3;
+			color: $cblue;
+			border-bottom: 2px solid $cblue;
 		}
 	}
 	p {
@@ -781,7 +758,7 @@ header {
 		margin-left: 30px;
 	}
 	&:focus {
-		border: 1px solid #c0301c;
+		border: 1px solid $cred;
 	}
 }
 .form-block {
@@ -796,7 +773,7 @@ header {
 	margin-bottom: 20px;
 	resize: none;
 	&:focus {
-		border: 1px solid #c0301c;
+		border: 1px solid $cred;
 	}
 }
 .form-input.block {
@@ -808,14 +785,14 @@ header {
 	p {
 		margin-top: 20px;
 		& span {
-			color: #c0301c;
+			color: $cred;
 		}
 	}
 }
 .footer {
 	padding-top: 100px;
 	padding-bottom: 100px;
-	background-color: #c0301c;
+	background-color: $cred;
 }
 .footer-container {
 	display: flex;
@@ -830,14 +807,14 @@ header {
 	svg {
 		width: 16px;
 		height: 14px;
-		color: #fff;
-		border: 2px solid #fff;
+		color: $cw;
+		border: 2px solid $cw;
 		border-radius: 50%;
 		padding: 8px;
 		margin: 0 7.5px;
 		&:hover {
-			color: #0056b3;
-			border: 2px solid #0056b3;
+			color: $cblue;
+			border: 2px solid $cblue;
 			// transform: scale(1.1);
 			// transition: .3s;
 		}
@@ -846,14 +823,14 @@ header {
 .title-decor {
 	width: 50px;
 	height: 2px;
-	background-color: #fff;
+	background-color: $cw;
 
 }
 .footer-items {
 	text-align: center;
 	p {
 		font-size: 10px;
-		color: #fff;
+		color: $cw;
 		font-weight: 400;
 		margin-top: 30px;
 	}
@@ -918,6 +895,11 @@ header {
 	}
 	}
 }
+.slider-container {
+	& .field {
+		width: 96%;
+	}
+}
 .works-wrapper {
 	height: 1000px;
 }
@@ -928,6 +910,12 @@ header {
 }
 }
 @media screen and(max-width:991px) {
+	
+	.slider-container {
+		& .field {
+			width: 100%;
+		}
+	}
 	.works-wrapper {
 		height: auto;
 	}
@@ -965,6 +953,14 @@ header {
 		li {
 			margin-left: 24px;
 		}
+	}
+	.slick-slide {
+		margin: 0 50px;
+	}
+
+	.slick-list {
+		margin-left: -50px;
+		margin-right: -50px;
 	}
 	.services-card {
 		margin: 0 15px;
@@ -1068,6 +1064,11 @@ header {
 			
 		}
 	}
+	.slider-container {
+		& .field {
+			width: 110%;
+		}
+	}
 	.slick-slide {
 		margin: 0 25;
 	}
@@ -1076,10 +1077,10 @@ header {
 		margin-right: -25px;
 	}
 	.slick-next {
-		right: 15px;
+		right: 4px;
 	}
 	.slick-prev {
-		left: 15px;
+		left: 24px;
 	}
 	.slider-image {
 		padding-bottom: 60px;

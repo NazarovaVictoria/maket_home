@@ -186,7 +186,7 @@ header .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat-Regular", sans-serif;
   font-weight: 1000;
   font-size: 12px;
   color: #555;
@@ -317,7 +317,7 @@ header .wrapper {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 110%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
@@ -883,6 +883,10 @@ header .wrapper {
     left: 140px;
   }
 
+  .slider-container .field {
+    width: 96%;
+  }
+
   .works-wrapper {
     height: 1000px;
   }
@@ -892,6 +896,10 @@ header .wrapper {
   }
 }
 @media screen and (max-width: 991px) {
+  .slider-container .field {
+    width: 100%;
+  }
+
   .works-wrapper {
     height: auto;
   }
@@ -930,6 +938,15 @@ header .wrapper {
   }
   .nav li {
     margin-left: 24px;
+  }
+
+  .slick-slide {
+    margin: 0 50px;
+  }
+
+  .slick-list {
+    margin-left: -50px;
+    margin-right: -50px;
   }
 
   .services-card {
@@ -1036,6 +1053,10 @@ header .wrapper {
     margin: 10px 0;
   }
 
+  .slider-container .field {
+    width: 110%;
+  }
+
   .slick-slide {
     margin: 0 25;
   }
@@ -1046,11 +1067,11 @@ header .wrapper {
   }
 
   .slick-next {
-    right: 15px;
+    right: 4px;
   }
 
   .slick-prev {
-    left: 15px;
+    left: 24px;
   }
 
   .slider-image {
