@@ -61,4 +61,10 @@ $(document).ready(function () {
     }] // appendArrows: $('.arrows-container')
 
   });
+}); // burger
+
+$(function () {
+  $('.menu-open').click(function () {
+    $('.menu').toggleClass('show-menu');
+  });
 });
