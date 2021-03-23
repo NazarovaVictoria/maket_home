@@ -415,18 +415,20 @@
                 <h3>lates works</h3>
                 <span class="title-decor"></span>
                 <div class="works-list-container">
-                    <ul class="works-list">
-                        <li><a href="#">all</a></li>
-                        <li><a href="#">branding</a></li>
-                        <li><a href="#">design</a></li>
-                        <li><a href="#">development</a></li>
-                        <li><a href="#">strategy</a></li>
-                    </ul>
+                    <nav class = "works-nav">
+                        <ul class="works-list">
+                            <li data-f="all">all</li>
+                            <li data-f="branding" class="text-branding">branding</li>
+                            <li data-f="design" class="text-desing">design</li>
+                            <li data-f="development" class="text-development">development</li>
+                            <li data-f="strategy" class="text-strategy">strategy</li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
             <div class="works-wrapper">
                 <div class="works-row">
-                    <div class="works-img">
+                    <div class="works-img design hide">
                         <picture class="works-picture">
                             <source srcset="./images/works/hair.webp 1x,
                                             ./images/works/hair@2x.webp 2x,
@@ -446,7 +448,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="works-img">
+                    <div class="works-img design hide">
                     <picture class="works-picture">
                         <source srcset="./images/works/bird.webp 1x,
                                         ./images/works/bird@2x.webp 2x,
@@ -466,7 +468,7 @@
                         </div>
                     </div>
                     </div>
-                    <div class="works-img">
+                    <div class="works-img development hide">
                     <picture class="works-picture">
                         <source srcset="./images/works/laptop.webp 1x,
                                         ./images/works/laptop@2x.webp 2x,
@@ -488,7 +490,7 @@
                     </div>
                 </div>
                 <div class="works-row">
-                    <div class="works-img">
+                    <div class="works-img branding hide">
                         <picture class="works-picture">
                             <source srcset="./images/works/camera.webp 1x,
                                             ./images/works/camera@2x.webp 2x,
@@ -508,7 +510,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="works-img">
+                    <div class="works-img branding hide">
                         <picture class="works-picture">
                             <source srcset="./images/works/bike.webp 1x,
                                             ./images/works/bike@2x.webp 2x,
@@ -528,7 +530,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="works-img">
+                    <div class="works-img strategy hide">
                         <picture class="works-picture">
                             <source srcset="./images/works/notebook.webp 1x,
                                             ./images/works/notebook@2x.webp 2x,
@@ -550,7 +552,7 @@
                     </div>
                 </div>
                 <div class="works-row">
-                    <div class="works-img">
+                    <div class="works-img strategy hide">
                         <picture class="works-picture">
                             <source srcset="./images/works/glasses.webp 1x,
                                             ./images/works/glasses@2x.webp 2x,
@@ -570,7 +572,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="works-img">
+                    <div class="works-img development hide">
                         <picture class="works-picture">
                             <source srcset="./images/works/ruler.webp 1x,
                                             ./images/works/ruler@2x.webp 2x,
@@ -590,7 +592,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="works-img">
+                    <div class="works-img strategy hide">
                         <picture class="works-picture">
                             <source srcset="./images/works/book.webp 1x,
                                             ./images/works/book@2x.webp 2x,
@@ -833,5 +835,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script src="./js/main.js"></script>
+<script src="./js/filter.js"></script>
 </body>
 </html>

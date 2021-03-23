@@ -392,17 +392,15 @@ header {
 	& li {
 		margin-left: 30px;
 		list-style-type: none;
-	}
-	& a {
 		font-family: $RobSl-Reg;
 		font-size: 14px;
 		letter-spacing: 1px;
 		color: $cgrey;
 		text-transform: capitalize;
-			&:hover {
-				color: $cred;
-				cursor: pointer;
-			}
+		&:hover {
+			color: $cred;
+			cursor: pointer;
+		}
 	}
 }
 .works-wrapper {
@@ -426,6 +424,23 @@ header {
 			opacity: 1;
 			// cursor: pointer;
 		}
+}
+.hide {
+	opacity: 1;
+	animation-name: a1;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+@keyframes a1 {
+	to {
+		opacity: 0;
+		min-height: 0;
+		min-width: 0;
+		padding: 0;
+		margin: 0;
+		border: 0;
+
+	}
 }
 .works-block {
 	position: absolute;
