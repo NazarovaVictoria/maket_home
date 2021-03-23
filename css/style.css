@@ -107,7 +107,6 @@ header .wrapper {
   flex-direction: column;
   align-items: center;
   margin-bottom: 70px;
-  padding-top: 95px;
 }
 
 .section-title h3 {
@@ -134,10 +133,14 @@ header .wrapper {
   font-weight: 400;
 }
 
+.services {
+  padding-top: 95px;
+  padding-bottom: 100px;
+}
+
 .services-card-group {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 100px;
 }
 
 .services-card {
@@ -161,6 +164,7 @@ header .wrapper {
 }
 .services-card-svg:hover {
   background-color: #c0301c;
+  cursor: pointer;
 }
 .services-card-svg .svg {
   width: 44px;
@@ -207,6 +211,8 @@ header .wrapper {
 }
 
 .slider {
+  padding-top: 95px;
+  padding-bottom: 100px;
   margin-left: auto;
   margin-right: auto;
   background: #f8f8f8;
@@ -230,18 +236,17 @@ header .wrapper {
 }
 
 .slider-image {
-  padding-bottom: 100px;
   position: relative;
 }
 .slider-image .slick-arrow {
   position: absolute;
-  top: 30%;
+  top: 40%;
   z-index: 5;
   width: 38px;
   height: 35px;
   border: 0;
   overflow: none;
-  background-color: #d7d7d7;
+  background-color: #8f8f8f;
 }
 .slider-image .slick-arrow:hover {
   background-color: #c0301c;
@@ -266,8 +271,8 @@ header .wrapper {
 }
 .slick-prev::after {
   content: "";
-  border-left: 3px solid #d7d7d7;
-  border-bottom: 3px solid #d7d7d7;
+  border-left: 3px solid #ddd;
+  border-bottom: 3px solid #ddd;
   left: 15px;
 }
 
@@ -280,8 +285,8 @@ header .wrapper {
 }
 .slick-next::after {
   content: "";
-  border-right: 3px solid #d7d7d7;
-  border-top: 3px solid #d7d7d7;
+  border-right: 3px solid #ddd;
+  border-top: 3px solid #ddd;
   right: 14px;
 }
 
@@ -323,8 +328,10 @@ header .wrapper {
   opacity: 0;
 }
 
-.slider-container:hover .field {
+.slick-slide:hover .field {
   opacity: 1;
+  transition: all 0.6s;
+  cursor: pointer;
 }
 
 .slider-social-icons {
@@ -339,12 +346,16 @@ header .wrapper {
   color: #fff;
   margin: 0 7.5px;
 }
+.slider-social-icons a {
+  background-color: transparent;
+  padding: 5px 0;
+}
 .slider-social-icons a:hover {
-  border: 4px solid #c0301c;
   background-color: #c0301c;
 }
 
 .works {
+  padding-top: 95px;
   padding-bottom: 100px;
 }
 
@@ -366,6 +377,7 @@ header .wrapper {
 }
 .works-list a:hover {
   color: #c0301c;
+  cursor: pointer;
 }
 
 .works-wrapper {
@@ -499,10 +511,11 @@ header .wrapper {
   text-transform: uppercase;
 }
 .project-wrapper a:hover {
-  background-color: #0056b3;
+  background-color: #c0301c;
 }
 
-.posts-wrapper {
+.posts {
+  padding-top: 95px;
   padding-bottom: 100px;
 }
 
@@ -539,6 +552,8 @@ header .wrapper {
 }
 
 .calendar {
+  width: auto;
+  height: auto;
   border: 2px solid #555;
   padding: 18px 20px;
   display: inline-block;
@@ -571,6 +586,7 @@ header .wrapper {
 }
 .posts-block-title h5:hover {
   color: #c0301c;
+  cursor: pointer;
 }
 .posts-block-title p {
   font-family: "RobotoSlab-Regular", sans-serif;
@@ -580,6 +596,7 @@ header .wrapper {
 }
 .posts-block-title span:hover {
   color: #c0301c;
+  cursor: pointer;
 }
 
 .posts-block-title-title p {
@@ -598,6 +615,7 @@ header .wrapper {
 }
 .posts-block-title-title h3:hover {
   color: #c0301c;
+  cursor: pointer;
 }
 
 .slider-image-wrapper {
@@ -682,6 +700,7 @@ header .wrapper {
 }
 
 .get {
+  padding-top: 95px;
   padding-bottom: 100px;
 }
 
@@ -701,22 +720,21 @@ header .wrapper {
   margin-left: 15px;
   margin-bottom: 30px;
 }
-.get-contact-item-container a {
+.get-contact-item-container h6 {
   font-size: 11px;
   color: #555;
   text-transform: uppercase;
   font-weight: 400;
-}
-.get-contact-item-container a:hover {
-  color: #0056b3;
-  border-bottom: 2px solid #0056b3;
+  margin-bottom: 20px;
 }
 .get-contact-item-container p {
+  font-family: "RobotoSlab-Regular", sans-serif;
   font-size: 11px;
+  color: #555;
   margin-bottom: 10px;
 }
-.get-contact-item-container p:nth-child(2) {
-  margin-top: 20px;
+.get-contact-item-container p:hover {
+  color: #0056b3;
 }
 
 .get-contact {
@@ -743,7 +761,7 @@ header .wrapper {
   margin-left: 30px;
 }
 .form-input:focus {
-  border: 1px solid #c0301c;
+  border: 2px solid #c0301c;
 }
 
 .form-block {

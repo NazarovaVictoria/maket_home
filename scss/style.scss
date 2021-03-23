@@ -134,7 +134,6 @@ header {
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: 70px;
-	padding-top: 95px;
 }
 .section-title {
 	h3 {
@@ -164,12 +163,14 @@ header {
 	font-weight: 400;
 	}
 }
+.services {
+	padding-top: 95px;
+	padding-bottom: 100px;
+}
 .services-card-group {
 	display: flex;
 	justify-content: space-around;
-	padding-bottom: 100px;
 }
-
 .services-card {
 	width: 350px;
 	justify-content: center;
@@ -189,6 +190,7 @@ header {
 	border: 2px solid $cllgray;
 	&:hover {
 		background-color: $cred;
+		cursor: pointer;
 	}
 	& .svg {
 		width: 44px;
@@ -236,6 +238,8 @@ header {
 	}
 }
 .slider {
+	padding-top: 95px;
+	padding-bottom: 100px;
 	margin-left: auto;
 	margin-right: auto;
 	background: $clight;
@@ -258,24 +262,23 @@ header {
 }
 
 .slider-image {
-	padding-bottom: 100px;
 	position: relative;
-	
 	& .slick-arrow {
 		position: absolute;
-		top: 30%;
+		top: 40%;
 		z-index: 5;
 		width: 38px;
 		height: 35px;
 		border: 0;
 		overflow: none;
-		background-color: $cbglight;
+		background-color: #8f8f8f;
 		&:hover {
 			background-color: $cred;
 		}
 		
 	}
 }
+
 .slick-arrow {
 	&::after {
 		content: "";
@@ -295,11 +298,14 @@ header {
 	}
 	&::after {
 		content: "";
-		border-left: 3px solid $cbglight;
-		border-bottom: 3px solid $cbglight;
+		border-left: 3px solid $cllgray;
+		border-bottom: 3px solid $cllgray;
 		left: 15px;
 	}
 }
+// .slick-prev.active {
+// 	background-color: $cred
+// }
 .slick-next {
 	right: 1px;
 	&::before {
@@ -308,8 +314,8 @@ header {
 	}
 	&::after {
 		content: "";
-		border-right: 3px solid $cbglight;
-		border-top: 3px solid $cbglight;
+		border-right: 3px solid $cllgray;
+		border-top: 3px solid $cllgray;
 		right: 14px;
 	}
 }
@@ -349,9 +355,11 @@ header {
 	}
 }
 	
-.slider-container {
+.slick-slide {
 	&:hover .field {
 		opacity: 1;
+		transition: all .6s;
+		cursor: pointer;
 	}
 }
 .slider-social-icons {
@@ -366,13 +374,15 @@ header {
 		margin: 0 7.5px;
 	}
 	& a {
+		background-color: transparent;
+		padding: 5px 0;
 		&:hover {
-			border: 4px solid $cred;
 			background-color: $cred;
-		}
+			}
 	}
 }
 .works {
+	padding-top: 95px;
 	padding-bottom: 100px;
 }
 .works-list {
@@ -391,6 +401,7 @@ header {
 		text-transform: capitalize;
 			&:hover {
 				color: $cred;
+				cursor: pointer;
 			}
 	}
 }
@@ -399,10 +410,6 @@ header {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
-	// display: grid;
-	// grid-template-columns: repeat(3,1fr);
-	// grid-template-rows: repeat(3,1fr);
-	
 }
 .works-row {
 	display: flex;
@@ -410,7 +417,6 @@ header {
 	 & .works-img:nth-child(2) {
 		margin: 0 30px;
 	 }
-	
 }
 .works-img {
 	max-width: 100%;
@@ -418,6 +424,7 @@ header {
 	overflow: hidden;
 		&:hover .works-block {
 			opacity: 1;
+			// cursor: pointer;
 		}
 }
 .works-block {
@@ -523,11 +530,12 @@ header {
 			border-radius: 2px;
 			text-transform: uppercase;
 			&:hover {
-				background-color: $cblue;
+				background-color: $cred;
 			}
 		}
 }
-.posts-wrapper {
+.posts {
+	padding-top: 95px;
 	padding-bottom: 100px;
 }
 .posts-container {
@@ -558,6 +566,8 @@ header {
 	display: flex;
 }
 .calendar {
+	width: auto;
+	height: auto;
 	border: 2px solid $cgrey;
 	padding: 18px 20px;
 	display: inline-block;
@@ -587,6 +597,7 @@ header {
 		padding-top: 15px;
 		&:hover {
 			color: $cred;
+			cursor: pointer;
 		}
 	}
 	p {
@@ -598,6 +609,7 @@ header {
 	span {
 		&:hover {
 			color: $cred;
+			cursor: pointer;
 		}
 		
 	}
@@ -618,6 +630,7 @@ header {
 		text-transform: uppercase;
 		&:hover {
 			color: $cred;
+			cursor: pointer;
 		}
 }
 }
@@ -701,6 +714,7 @@ header {
 	}
 }
 .get {
+	padding-top: 95px;
 	padding-bottom: 100px;
 }
 .get-contact-item {
@@ -708,7 +722,6 @@ header {
 	svg {
 		width: 15px;
 		height: 20px;
-		
 		&:hover {
 			color: $cblue;
 			transition: all .6s;
@@ -718,22 +731,21 @@ header {
 .get-contact-item-container {
 	margin-left: 15px;
 	margin-bottom: 30px;
-	a {
-		// font-family: "Montserrat-Regular",sans-serif;
+	h6 {
 		font-size: 11px;
 		color: $cgrey;
 		text-transform: uppercase;
 		font-weight: 400;
-		&:hover {
-			color: $cblue;
-			border-bottom: 2px solid $cblue;
-		}
+		margin-bottom: 20px;
+		
 	}
 	p {
+		font-family: $RobSl-Reg;
 		font-size: 11px;
+		color: $cgrey;
 		margin-bottom: 10px;
-		&:nth-child(2) {
-			margin-top: 20px;
+		&:hover {
+			color: $cblue;
 		}
 	}
 }
@@ -758,7 +770,7 @@ header {
 		margin-left: 30px;
 	}
 	&:focus {
-		border: 1px solid $cred;
+		border: 2px solid $cred;
 	}
 }
 .form-block {
